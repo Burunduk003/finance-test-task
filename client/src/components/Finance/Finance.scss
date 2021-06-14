@@ -1,0 +1,28 @@
+.shares {
+
+  margin: 0 auto;
+  max-width: 800px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(138, 135, 135);
+    color: #fff;
+    border-radius: 10%;
+  }
+  
+}
