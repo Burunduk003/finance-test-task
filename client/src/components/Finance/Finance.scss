@@ -1,7 +1,7 @@
-.shares {
+.promo {
 
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
 
   &__list {
     display: grid;
@@ -15,14 +15,33 @@
 
   &__item {
     padding: 5px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 10px 1fr;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: rgb(138, 135, 135);
     color: #fff;
-    border-radius: 10%;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
   
+}
+
+.content {
+
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 80px));
+    border-bottom: 1px solid #000;
+  }
 }
